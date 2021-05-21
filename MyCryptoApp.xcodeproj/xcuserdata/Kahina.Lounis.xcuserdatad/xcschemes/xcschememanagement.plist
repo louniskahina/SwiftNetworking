@@ -7,7 +7,25 @@
 		<key>MyCryptoApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>C063CF0326531CC500F264E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C063CF1926531CC600F264E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C063CF2426531CC600F264E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
