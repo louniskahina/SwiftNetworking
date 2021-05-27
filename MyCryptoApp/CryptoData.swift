@@ -34,37 +34,37 @@ struct display: Codable {
 struct euro: Codable {
     let FROMSYMBOL: String
     let PRICE: String
+    let VOLUME24HOURTO: String
 }
 
-protocol DisplayableCoinInfo {
+protocol Displayable {
+    
     var fullNameLabelText: String { get }
     var logoImageURL: String { get }
-}
-
-protocol DisplayableEuro {
     var symbolLabelText: String { get }
     var valueLabelText: String { get }
+    var volume24hourText: String { get }
 }
 
 //make coinInfo displayable
-extension coinInfo: DisplayableCoinInfo {
-    var logoImageURL: String {
-        ImageUrl
+extension crypto: Displayable {
+    var volume24hourText: String {
+        DISPLAY.EUR.VOLUME24HOURTO
     }
-   
-    var fullNameLabelText: String {
-        FullName
-    }
-}
-
-extension euro: DisplayableEuro {
+    
     var symbolLabelText: String {
-        FROMSYMBOL
+        DISPLAY.EUR.FROMSYMBOL
     }
     
     var valueLabelText: String {
-        PRICE
+        DISPLAY.EUR.PRICE
     }
     
-    
+    var logoImageURL: String {
+        CoinInfo.ImageUrl
+    }
+   
+    var fullNameLabelText: String {
+        CoinInfo.FullName
+    }
 }

@@ -10,6 +10,10 @@
 		C00413DE2653D6380014C3D1 /* CryptoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00413DD2653D6380014C3D1 /* CryptoListTableViewController.swift */; };
 		C004141226550CCF0014C3D1 /* CryptoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C004141126550CCF0014C3D1 /* CryptoData.swift */; };
 		C004144A265662B10014C3D1 /* NetworkService .swift in Sources */ = {isa = PBXBuildFile; fileRef = C0041449265662B10014C3D1 /* NetworkService .swift */; };
+		C0311F57265DB0E40089541A /* CryptoItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0311F56265DB0E40089541A /* CryptoItemTableViewCell.swift */; };
+		C0311F5C265DB1260089541A /* CryptoTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0311F5B265DB1260089541A /* CryptoTableDataSource.swift */; };
+		C0311F61265DB1970089541A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0311F60265DB1970089541A /* DetailsViewController.swift */; };
+		C0311F66265DB2270089541A /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0311F65265DB2270089541A /* CryptoViewModel.swift */; };
 		C063CF0826531CC500F264E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C063CF0726531CC500F264E2 /* AppDelegate.swift */; };
 		C063CF0A26531CC500F264E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C063CF0926531CC500F264E2 /* SceneDelegate.swift */; };
 		C063CF0F26531CC500F264E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C063CF0D26531CC500F264E2 /* Main.storyboard */; };
@@ -45,6 +49,10 @@
 		C00413DD2653D6380014C3D1 /* CryptoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListTableViewController.swift; sourceTree = "<group>"; };
 		C004141126550CCF0014C3D1 /* CryptoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoData.swift; sourceTree = "<group>"; };
 		C0041449265662B10014C3D1 /* NetworkService .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkService .swift"; sourceTree = "<group>"; };
+		C0311F56265DB0E40089541A /* CryptoItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoItemTableViewCell.swift; sourceTree = "<group>"; };
+		C0311F5B265DB1260089541A /* CryptoTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableDataSource.swift; sourceTree = "<group>"; };
+		C0311F60265DB1970089541A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		C0311F65265DB2270089541A /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 		C063CF0426531CC500F264E2 /* MyCryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C063CF0726531CC500F264E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C063CF0926531CC500F264E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,8 +137,12 @@
 			isa = PBXGroup;
 			children = (
 				C00413DD2653D6380014C3D1 /* CryptoListTableViewController.swift */,
+				C0311F5B265DB1260089541A /* CryptoTableDataSource.swift */,
+				C0311F56265DB0E40089541A /* CryptoItemTableViewCell.swift */,
 				C004141126550CCF0014C3D1 /* CryptoData.swift */,
+				C0311F65265DB2270089541A /* CryptoViewModel.swift */,
 				C004141F265535CF0014C3D1 /* Networking */,
+				C0311F60265DB1970089541A /* DetailsViewController.swift */,
 				C063CF0726531CC500F264E2 /* AppDelegate.swift */,
 				C063CF0926531CC500F264E2 /* SceneDelegate.swift */,
 				C063CF0D26531CC500F264E2 /* Main.storyboard */,
@@ -360,9 +372,13 @@
 			files = (
 				C00413DE2653D6380014C3D1 /* CryptoListTableViewController.swift in Sources */,
 				C063CF0826531CC500F264E2 /* AppDelegate.swift in Sources */,
+				C0311F57265DB0E40089541A /* CryptoItemTableViewCell.swift in Sources */,
+				C0311F61265DB1970089541A /* DetailsViewController.swift in Sources */,
 				C063CF0A26531CC500F264E2 /* SceneDelegate.swift in Sources */,
+				C0311F66265DB2270089541A /* CryptoViewModel.swift in Sources */,
 				C004141226550CCF0014C3D1 /* CryptoData.swift in Sources */,
 				C004144A265662B10014C3D1 /* NetworkService .swift in Sources */,
+				C0311F5C265DB1260089541A /* CryptoTableDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,32 +10,43 @@ import UIKit
 import Alamofire
 
 
-class CryptoListTableViewController: UITableViewController {
+class CryptoListTableViewController: UIViewController {
    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var cryptos : [Displayable] = []
+    
+    
     let networkService = NetworkService()
-    var crypto = [Info]()
+    let cryptoViewModel = CryptoViewModel()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        networkService.fetchCrypto()
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       // return items.count
-          return 10
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        return cell
         
+        tableView.reloadData()
+        tableView.dataSource = self
+        
+        tableView.rowHeight = UITableView.automaticDimension
+        
+        fetchCrypto()
     }
-    
-    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-      return indexPath
-    }
- 
+
 }
-  
 
+extension CryptoListTableViewController {
+func fetchCrypto()  {
+  //  https://www.cryptocompare.com/
+    AF.request("https://min-api.cryptocompare.com/data/top/mktcapfull?limit=10&tsym=EUR")
+        .validate()
+        .responseDecodable(of: Info.self) { (response) in
+            guard let info = response.value else { return }
+            self.cryptos = info.Data
+            self.tableView.reloadData()
+          
+            
+        }
+}
 
+}
