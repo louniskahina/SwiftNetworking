@@ -39,6 +39,7 @@ extension CryptoListTableViewController : UITableViewDataSource {
             destination.cryptoSymboleText = cryptos[selectedRow].symbolLabelText
             destination.CryptovolumeText = cryptos[selectedRow].volume24hourText
             destination.cryptoLogoImageUrl = cryptos[selectedRow].logoImageURL
+            destination.valueLabelTextDouble = cryptos[selectedRow].valueLabelTextDouble
             
          
         }

@@ -23,19 +23,24 @@ class DetailsViewController: UIViewController {
     
     @IBOutlet weak var cryptoMoneyLabel: UILabel!
     
+    let cryptoViewModel = CryptoViewModel()
+    
     var cryptoNameText : String?
     var cryptoValueText : String?
     var cryptoSymboleText : String?
     var CryptovolumeText: String?
     var cryptoLogoImageUrl: String?
+    var valueLabelTextDouble: Double?
     
     
     @IBAction func convertButton(_ sender: UIButton) {
-        
-        let argent =  Double(userInputTextField.text!)
-        let price = Double(cryptoValueText!)
-        let cryptomoney = argent!/price!
-        cryptoMoneyLabel.text = String(cryptomoney)
+     
+        if let argent = Double(userInputTextField.text!) {
+ 
+            let result = cryptoViewModel.conversionEuroToCrypto(euro: argent, cryptoValue: valueLabelTextDouble!)
+            cryptoMoneyLabel.text = String(result)
+    
+        }
         
     }
     

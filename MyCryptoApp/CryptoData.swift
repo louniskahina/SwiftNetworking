@@ -14,7 +14,7 @@ struct Info: Codable {
 
 struct crypto: Codable {
     let CoinInfo: coinInfo
-    //let RAW: raw
+    let RAW: raw
     let DISPLAY: display
 }
 
@@ -25,7 +25,10 @@ struct coinInfo: Codable {
 }
 
 struct raw: Codable {
-    let EUR: euro
+    let EUR: euroR
+    }
+struct euroR: Codable {
+    let PRICE: Double
     }
 
 struct display: Codable {
@@ -44,10 +47,15 @@ protocol Displayable {
     var symbolLabelText: String { get }
     var valueLabelText: String { get }
     var volume24hourText: String { get }
+    var valueLabelTextDouble: Double { get }
 }
 
 //make coinInfo displayable
 extension crypto: Displayable {
+    var valueLabelTextDouble: Double {
+        RAW.EUR.PRICE
+    }
+    
     var volume24hourText: String {
         DISPLAY.EUR.VOLUME24HOURTO
     }

@@ -138,10 +138,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKz-n7-1l4">
-                                <rect key="frame" x="40" y="516" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKz-n7-1l4">
+                                <rect key="frame" x="20" y="514" width="59" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                </state>
                                 <connections>
                                     <action selector="convertButton:" destination="hWD-eZ-zxW" eventType="touchUpInside" id="T8h-QE-4lq"/>
                                 </connections>
@@ -163,11 +165,14 @@
                             <constraint firstItem="Y0H-C5-JVx" firstAttribute="top" secondItem="mTr-DD-NCA" secondAttribute="bottom" constant="40" id="EVD-uZ-7fD"/>
                             <constraint firstItem="mTr-DD-NCA" firstAttribute="centerX" secondItem="UG6-Kl-Hsr" secondAttribute="centerX" id="Ggb-bl-mKn"/>
                             <constraint firstItem="lun-uZ-GKJ" firstAttribute="top" secondItem="UG6-Kl-Hsr" secondAttribute="bottom" constant="40" id="LUu-Bd-koi"/>
+                            <constraint firstItem="w1Y-Mw-OyR" firstAttribute="centerY" secondItem="TKz-n7-1l4" secondAttribute="centerY" id="Lnp-yn-Yeh"/>
                             <constraint firstItem="w1Y-Mw-OyR" firstAttribute="centerY" secondItem="lun-uZ-GKJ" secondAttribute="centerY" id="M0e-um-AOj"/>
                             <constraint firstItem="Y0H-C5-JVx" firstAttribute="leading" secondItem="i1a-o5-THK" secondAttribute="leading" id="MDv-4v-97g"/>
                             <constraint firstItem="mTr-DD-NCA" firstAttribute="leading" secondItem="i1a-o5-THK" secondAttribute="leading" id="Mlb-IO-OHf"/>
                             <constraint firstItem="UG6-Kl-Hsr" firstAttribute="top" secondItem="Y0H-C5-JVx" secondAttribute="bottom" constant="40" id="N7K-Z6-Di8"/>
+                            <constraint firstItem="TKz-n7-1l4" firstAttribute="leading" secondItem="sUr-I9-CZY" secondAttribute="leading" constant="20" id="Sqh-Vf-SEE"/>
                             <constraint firstItem="lun-uZ-GKJ" firstAttribute="leading" secondItem="i1a-o5-THK" secondAttribute="leading" id="VBI-np-2x9"/>
+                            <constraint firstItem="lun-uZ-GKJ" firstAttribute="centerY" secondItem="TKz-n7-1l4" secondAttribute="centerY" id="VT2-Hr-pXt"/>
                             <constraint firstItem="Elo-70-m7H" firstAttribute="top" secondItem="i1a-o5-THK" secondAttribute="bottom" constant="40" id="XW4-gU-AE6"/>
                             <constraint firstItem="w1Y-Mw-OyR" firstAttribute="leading" secondItem="lun-uZ-GKJ" secondAttribute="trailing" constant="20" id="jAr-hf-AMB"/>
                             <constraint firstItem="i1a-o5-THK" firstAttribute="leading" secondItem="sUr-I9-CZY" secondAttribute="leading" constant="94" id="r8A-Mv-mSU"/>
@@ -212,6 +217,9 @@
         <image name="circles.hexagongrid.fill" catalog="system" width="128" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

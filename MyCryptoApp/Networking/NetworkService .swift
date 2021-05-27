@@ -19,17 +19,7 @@ class NetworkService {
             .validate()
             .responseDecodable(of: Info.self) { (response) in
                 guard let info = response.value else { return }
-                //for testing
-               // print(info.Data[0].CoinInfo.Name)
-               // print(info.Data[0].CoinInfo.FullName)
-              //  print(info.Data[1].CoinInfo.Name)
-              //  print(info.Data[1].CoinInfo.FullName)
-             //   print(info.Data[0].DISPLAY.EUR.PRICE)
-             //   print(info.Data[1].CoinInfo.FullName)
                 print(info.Data[1].CoinInfo.ImageUrl)
-              
-                
-               // let items = info.Data
                 
             }
     }
