@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 ///turn JSON into the data model.
 struct Info: Codable {
@@ -40,39 +41,5 @@ struct euro: Codable {
     let VOLUME24HOURTO: String
 }
 
-protocol Displayable {
-    
-    var fullNameLabelText: String { get }
-    var logoImageURL: String { get }
-    var symbolLabelText: String { get }
-    var valueLabelText: String { get }
-    var volume24hourText: String { get }
-    var valueLabelTextDouble: Double { get }
-}
 
-//make coinInfo displayable
-extension crypto: Displayable {
-    var valueLabelTextDouble: Double {
-        RAW.EUR.PRICE
-    }
-    
-    var volume24hourText: String {
-        DISPLAY.EUR.VOLUME24HOURTO
-    }
-    
-    var symbolLabelText: String {
-        DISPLAY.EUR.FROMSYMBOL
-    }
-    
-    var valueLabelText: String {
-        DISPLAY.EUR.PRICE
-    }
-    
-    var logoImageURL: String {
-        CoinInfo.ImageUrl
-    }
-   
-    var fullNameLabelText: String {
-        CoinInfo.FullName
-    }
-}
+

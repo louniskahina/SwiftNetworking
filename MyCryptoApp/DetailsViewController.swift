@@ -39,14 +39,14 @@ class DetailsViewController: UIViewController {
  
             let result = cryptoViewModel.conversionEuroToCrypto(euro: argent, cryptoValue: valueLabelTextDouble!)
             cryptoMoneyLabel.text = String(result)
-    
         }
         
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
+        super.viewDidLoad()
+    
         cryptoNameLabel.text = cryptoNameText
         cryptoValueLabel.text = cryptoValueText
         cryptoSymbolLabel.text = cryptoSymboleText

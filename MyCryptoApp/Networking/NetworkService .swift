@@ -10,17 +10,38 @@ import Alamofire
 
 //https://app.quicktype.io/
 
-class NetworkService {
-    
-
-    func fetchCrypto()  {
-      //  https://www.cryptocompare.com/
-        AF.request("https://min-api.cryptocompare.com/data/top/mktcapfull?limit=10&tsym=EUR")
-            .validate()
-            .responseDecodable(of: Info.self) { (response) in
-                guard let info = response.value else { return }
-                print(info.Data[1].CoinInfo.ImageUrl)
-                
-            }
-    }
+protocol NetworkServiceProtocole {
+    func fetchCrypto(completion: @escaping (Result<[crypto], AFError>) -> Void)
 }
+
+class NetworkService : NetworkServiceProtocole {
+    
+    var networkManager: NetworkManager = NetworkManagerImpl()
+    
+    func fetchCrypto(completion: @escaping (Result<[crypto], AFError>) -> Void) {
+        /// fetch corpusfrom the API
+        /// - Parameter completion: the completion to execute once the data is fetched
+        func fetchCorpus(completion: @escaping (Result<[crypto], AFError>) -> Void) {
+            networkManager.performApi(
+                URL: URL(string: AppConsts.defaultUrl),
+                method: .get,
+                parameters: nil,
+                encoding: URLEncoding.default,
+                customHeader: nil
+            ) { (result: Result<[crypto], AFError>) in
+                switch result {
+                case .success(let corpusList):
+                    completion(.success(corpusList))
+                case .failure(let error):
+                    completion(.failure(error))
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+
