@@ -19,7 +19,6 @@
 		C063CF0F26531CC500F264E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C063CF0D26531CC500F264E2 /* Main.storyboard */; };
 		C063CF1126531CC600F264E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C063CF1026531CC600F264E2 /* Assets.xcassets */; };
 		C063CF1426531CC600F264E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C063CF1226531CC600F264E2 /* LaunchScreen.storyboard */; };
-		C063CF1F26531CC600F264E2 /* MyCryptoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C063CF1E26531CC600F264E2 /* MyCryptoAppTests.swift */; };
 		C0B7E00326650B1000591C33 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7E00226650B1000591C33 /* NetworkManager.swift */; };
 		C0B7E00826650C0300591C33 /* CustomNetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7E00726650C0300591C33 /* CustomNetworkLogger.swift */; };
 		C0B7E00E26650ED600591C33 /* AppConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7E00D26650ED600591C33 /* AppConsts.swift */; };
@@ -27,7 +26,7 @@
 		C0B7E01B2665164100591C33 /* ErrorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7E01A2665164100591C33 /* ErrorEnum.swift */; };
 		C0B7E0202665329B00591C33 /* ErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7E01F2665329B00591C33 /* ErrorExtension.swift */; };
 		C0B7E02526653B8E00591C33 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7E02426653B8E00591C33 /* AlertExtension.swift */; };
-		C0B7E0302666203000591C33 /* MyCryptoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C063CF1E26531CC600F264E2 /* MyCryptoAppTests.swift */; };
+		C0B7E05526668DC800591C33 /* CryptosListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7E04626668D2B00591C33 /* CryptosListTests.swift */; };
 		C0F599DC265F9CE4007D72B5 /* CryptoListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F599DB265F9CE4007D72B5 /* CryptoListTableViewModel.swift */; };
 		DD549C13CDAF344A63FE23AD /* Pods_MyCryptoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F680ABA3B80BDD1E47B9BEAF /* Pods_MyCryptoAppTests.framework */; };
 		F8C421A54B1378264F83D136 /* Pods_MyCryptoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571C2D83576B3B509C26D6A6 /* Pods_MyCryptoApp.framework */; };
@@ -70,7 +69,6 @@
 		C063CF1326531CC600F264E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C063CF1526531CC600F264E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C063CF1A26531CC600F264E2 /* MyCryptoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCryptoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C063CF1E26531CC600F264E2 /* MyCryptoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCryptoAppTests.swift; sourceTree = "<group>"; };
 		C063CF2026531CC600F264E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C063CF2526531CC600F264E2 /* MyCryptoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCryptoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B7E00226650B1000591C33 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -80,6 +78,7 @@
 		C0B7E01A2665164100591C33 /* ErrorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorEnum.swift; sourceTree = "<group>"; };
 		C0B7E01F2665329B00591C33 /* ErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExtension.swift; sourceTree = "<group>"; };
 		C0B7E02426653B8E00591C33 /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
+		C0B7E04626668D2B00591C33 /* CryptosListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptosListTests.swift; sourceTree = "<group>"; };
 		C0F599DB265F9CE4007D72B5 /* CryptoListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListTableViewModel.swift; sourceTree = "<group>"; };
 		F6637DFC53FF8AE54707BA73 /* Pods-MyCryptoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCryptoApp.debug.xcconfig"; path = "Target Support Files/Pods-MyCryptoApp/Pods-MyCryptoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F680ABA3B80BDD1E47B9BEAF /* Pods_MyCryptoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCryptoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,8 +177,8 @@
 		C063CF1D26531CC600F264E2 /* MyCryptoAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				C063CF1E26531CC600F264E2 /* MyCryptoAppTests.swift */,
 				C063CF2026531CC600F264E2 /* Info.plist */,
+				C0B7E04626668D2B00591C33 /* CryptosListTests.swift */,
 			);
 			path = MyCryptoAppTests;
 			sourceTree = "<group>";
@@ -427,7 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C063CF1F26531CC600F264E2 /* MyCryptoAppTests.swift in Sources */,
+				C0B7E05526668DC800591C33 /* CryptosListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +434,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0B7E0302666203000591C33 /* MyCryptoAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,7 @@ extension CryptosTableDataSource : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
+       
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -30,6 +31,7 @@ extension CryptosTableDataSource : UITableViewDataSource {
         let imageUrl = crypto.CoinInfo.ImageUrl
          let urlo = URL(string: "https://www.cryptocompare.com/" + imageUrl )
         cell.cryptoLogoImage?.load(url: urlo!)*/
+        print(dataSource[indexPath.row])
         cell.cryptoItem = dataSource[indexPath.row]
         return cell
     }

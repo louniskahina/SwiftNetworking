@@ -16,14 +16,19 @@ class CryptoListTableViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private let refreshControl = UIRefreshControl()
-    var dataSource: CryptosTableDataSource!
+    var data: CryptosTableDataSource!
     var viewModel: CryptoListTableViewModel!
+    
+    
     private var subscriptions: Set<AnyCancellable> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setListeners()
+        
+      
         // Fetch crypto via the ViewModel
+        viewModel = CryptoListTableViewModel()
+       // setListeners()
         viewModel.fetchCrypto { [weak self] (result: Result<[crypto], Error>) in
             DispatchQueue.main.async {
                 do {
@@ -35,9 +40,9 @@ class CryptoListTableViewController: UIViewController {
                 }
             }
         }
+        //tableView.dataSource = dataSource
+        //tableView.reloadData()
         
-        tableView.reloadData()
-        tableView.dataSource = dataSource
         
         tableView.rowHeight = UITableView.automaticDimension
         
@@ -45,12 +50,12 @@ class CryptoListTableViewController: UIViewController {
     }
     
     /// Set listeners to observe value from the ViewModel
-    private func setListeners() {
+   /* private func setListeners() {
         
         // Check if we have an error due to a request and print it
-        viewModel.$requestError.sink { [weak self] requestError in
+     /* viewModel.$requestError.sink { [weak self] requestError in
             self?.viewModel.requestError = nil
-        }.store(in: &subscriptions)
+        }.store(in: &subscriptions)*/
 
         // Update datasource and reload table with data
         viewModel.$dataSource.sink { [weak self] dataSource in
@@ -78,14 +83,18 @@ class CryptoListTableViewController: UIViewController {
                 UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: "hasNoCryptos")
             }
         }.store(in: &subscriptions)
-    }
+    }*/
     
 
     /// After fetching folders request
     private func onFetchingCryptoAction(result: Result<[crypto], Error>) throws {
         switch result {
-        case .success:
+        case .success(let listCryptos):
             print("Fetching cryptos successfully.")
+            data = CryptosTableDataSource()
+            data.dataSource = listCryptos
+            self.tableView.dataSource = data
+            self.tableView.reloadData()
         case .failure(let error):
             // updates the dataSource, empty it
             self.viewModel.dataSource = []
@@ -109,13 +118,13 @@ extension CryptoListTableViewController {
         if let destination = segue.destination as? DetailsViewController {
             let indexPath = tableView.indexPathsForSelectedRows?.first
             let selectedRow = indexPath!.row
-          //  destination.cryptoNameText = cryptos[selectedRow].CoinInfo.FullName
-          //  destination.cryptoValueText = cryptos[selectedRow].DISPLAY.EUR.PRICE
+            destination.cryptoNameText = data.dataSource[selectedRow].CoinInfo.FullName
+            destination.cryptoValueText = data.dataSource[selectedRow].DISPLAY.EUR.PRICE
 
-         //   destination.cryptoSymboleText = cryptos[selectedRow].DISPLAY.EUR.FROMSYMBOL
-         //   destination.CryptovolumeText = cryptos[selectedRow].DISPLAY.EUR.VOLUME24HOURTO
-         //   destination.cryptoLogoImageUrl = cryptos[selectedRow].CoinInfo.ImageUrl
-        //    destination.valueLabelTextDouble = cryptos[selectedRow].RAW.EUR.PRICE
+            destination.cryptoSymboleText = data.dataSource[selectedRow].DISPLAY.EUR.FROMSYMBOL
+            destination.CryptovolumeText = data.dataSource[selectedRow].DISPLAY.EUR.VOLUME24HOURTO
+            destination.cryptoLogoImageUrl = data.dataSource[selectedRow].CoinInfo.ImageUrl
+            destination.valueLabelTextDouble = data.dataSource[selectedRow].RAW.EUR.PRICE
             
          
         }

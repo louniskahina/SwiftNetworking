@@ -23,6 +23,9 @@ class CryptoListTableViewModel {
     //Contains api requests
     private var networkService: NetworkService = NetworkService()
     
+    init () {
+        
+    }
     // Data source of the table
     init(dataSource: [crypto]?) {
         self.dataSource = dataSource
@@ -35,9 +38,11 @@ class CryptoListTableViewModel {
                 switch result {
                 case .success(let cryptoList):
                     if cryptoList.isEmpty {
+            
                         self?.hasNoCryptos = true
                         self?.hasFetched = true
                     } else {
+                    
                         self?.dataSource = cryptoList //the datasource of tableview will get the fetchCrypto result
                         self?.hasFetched = true
                     }

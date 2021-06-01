@@ -11,6 +11,7 @@ import Alamofire
 protocol NetworkManager {
     
     var session: Session { get }
+    
     func performApi<T: Decodable>(
         URL: URL?,
         method: HTTPMethod,

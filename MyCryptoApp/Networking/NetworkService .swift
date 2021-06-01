@@ -26,13 +26,15 @@ class NetworkService : NetworkServiceProtocole {
                 parameters: nil,
                 encoding: URLEncoding.default,
                 customHeader: nil
-            ) { (result: Result<[crypto], AFError>) in
+            ) { (result: Result<Info, AFError>) in
+                print(result)
                 switch result {
-                case .success(let corpusList):
-                    completion(.success(corpusList))
+                case .success(let info):
+                    completion(.success(info.Data))
                 case .failure(let error):
                     completion(.failure(error))
                 }
+               
             }
         }
     
