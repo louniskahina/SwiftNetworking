@@ -10,7 +10,7 @@ import Alamofire
 import Combine
 import UIKit
 
-class  CryptoListTableViewModel {
+class CryptoListTableViewModel {
     
     // Values observed
     @Published var requestError: (Error, Any?)?
@@ -20,7 +20,7 @@ class  CryptoListTableViewModel {
     
     // List of subscriptions
     private var subscriptions: Set<AnyCancellable> = []
-    //Contains requests
+    //Contains api requests
     private var networkService: NetworkService = NetworkService()
     
     // Data source of the table
@@ -29,6 +29,7 @@ class  CryptoListTableViewModel {
     }
     
     func fetchCrypto(completion: @escaping (Result<[crypto], Error>) -> Void) {
+        hasFetched = false
         self.networkService.fetchCrypto { [weak self] (result: Result<[crypto], AFError>) in
             DispatchQueue.main.async {
                 switch result {
@@ -37,7 +38,7 @@ class  CryptoListTableViewModel {
                         self?.hasNoCryptos = true
                         self?.hasFetched = true
                     } else {
-                        self?.dataSource = cryptoList
+                        self?.dataSource = cryptoList //the datasource of tableview will get the fetchCrypto result
                         self?.hasFetched = true
                     }
                     completion(.success(cryptoList))

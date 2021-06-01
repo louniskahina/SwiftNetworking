@@ -46,9 +46,10 @@ class CryptoListTableViewController: UIViewController {
     
     /// Set listeners to observe value from the ViewModel
     private func setListeners() {
+        
         // Check if we have an error due to a request and print it
         viewModel.$requestError.sink { [weak self] requestError in
-                self?.viewModel.requestError = nil
+            self?.viewModel.requestError = nil
         }.store(in: &subscriptions)
 
         // Update datasource and reload table with data

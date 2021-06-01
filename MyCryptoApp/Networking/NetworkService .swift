@@ -18,10 +18,8 @@ class NetworkService : NetworkServiceProtocole {
     
     var networkManager: NetworkManager = NetworkManagerImpl()
     
-    func fetchCrypto(completion: @escaping (Result<[crypto], AFError>) -> Void) {
-        /// fetch corpusfrom the API
-        /// - Parameter completion: the completion to execute once the data is fetched
-        func fetchCorpus(completion: @escaping (Result<[crypto], AFError>) -> Void) {
+        //Parameter completion: the completion to execute once the data is fetched
+        func fetchCrypto(completion: @escaping (Result<[crypto], AFError>) -> Void) {
             networkManager.performApi(
                 URL: URL(string: AppConsts.defaultUrl),
                 method: .get,
@@ -37,7 +35,7 @@ class NetworkService : NetworkServiceProtocole {
                 }
             }
         }
-    }
+    
     
 }
 

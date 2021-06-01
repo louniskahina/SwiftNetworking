@@ -22,7 +22,6 @@ protocol NetworkManager {
 
 }
 
-
 /// Netwok manager that can perform network requests with a session
 class NetworkManagerImpl: NetworkManager {
     var session: Session
@@ -36,9 +35,6 @@ class NetworkManagerImpl: NetworkManager {
             let urlconfig = URLSessionConfiguration.af.default
             urlconfig.timeoutIntervalForRequest = TimeInterval(AppConsts.customTimeoutIntervalForRequest)
             urlconfig.timeoutIntervalForResource = TimeInterval(AppConsts.customTimeoutIntervalForResource)
-
-            // Only for testing
-            // urlconfig.urlCache?.removeAllCachedResponses()
 
             // Logger for debugging
             let myNetworkLogger = CustomNetworkLogger()
@@ -64,7 +60,7 @@ class NetworkManagerImpl: NetworkManager {
         completion: @escaping (Result<T, AFError>) -> Void
     ) {
         guard let URL = URL else {
-            completion(.failure(.invalidURL(url: "https://min-api.cryptocompare.com/data/top/mktcapfull?limit=10&tsym=EUR")))
+            completion(.failure(.invalidURL(url: "")))
             return
         }
 

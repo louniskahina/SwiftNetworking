@@ -27,6 +27,7 @@
 		C0B7E01B2665164100591C33 /* ErrorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7E01A2665164100591C33 /* ErrorEnum.swift */; };
 		C0B7E0202665329B00591C33 /* ErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7E01F2665329B00591C33 /* ErrorExtension.swift */; };
 		C0B7E02526653B8E00591C33 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7E02426653B8E00591C33 /* AlertExtension.swift */; };
+		C0B7E0302666203000591C33 /* MyCryptoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C063CF1E26531CC600F264E2 /* MyCryptoAppTests.swift */; };
 		C0F599DC265F9CE4007D72B5 /* CryptoListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F599DB265F9CE4007D72B5 /* CryptoListTableViewModel.swift */; };
 		DD549C13CDAF344A63FE23AD /* Pods_MyCryptoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F680ABA3B80BDD1E47B9BEAF /* Pods_MyCryptoAppTests.framework */; };
 		F8C421A54B1378264F83D136 /* Pods_MyCryptoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571C2D83576B3B509C26D6A6 /* Pods_MyCryptoApp.framework */; };
@@ -434,6 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B7E0302666203000591C33 /* MyCryptoAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

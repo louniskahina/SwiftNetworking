@@ -6,28 +6,28 @@
 //
 
 import XCTest
+import Alamofire
 @testable import MyCryptoApp
 
 class MyCryptoAppTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    let networkService : NetworkServiceProtocole = NetworkService()
+    
+    func testGetCorpusList() throws {
+        let cryptoExpectation = XCTestExpectation(description: "listCryptos")
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        networkService.fetchCrypto() { (result: Result<[crypto], AFError>) in
+            switch result {
+            case .success(let cryptoList):
+                XCTAssert(type(of: cryptoList) == Array<crypto>.self)//on verifie que le resultat est un tableau de crypto
+            case .failure(_):
+                XCTFail("No error thrown")
+            }
+            
+            cryptoExpectation.fulfill()
         }
+        
     }
+
 
 }
