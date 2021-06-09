@@ -10,8 +10,6 @@ import Alamofire
 
 protocol NetworkManager {
     
-    var session: Session { get }
-    
     func performApi<T: Decodable>(
         URL: URL?,
         method: HTTPMethod,
@@ -20,38 +18,10 @@ protocol NetworkManager {
         customHeader: HTTPHeaders?,
         completion: @escaping (Result<T, AFError>) -> Void
     )
-
 }
 
-/// Netwok manager that can perform network requests with a session
 class NetworkManagerImpl: NetworkManager {
-    var session: Session
 
-    // Init session used by all NetworkManager requests
-    init(session: Session? = nil) {
-        if let session = session {
-            self.session = session
-        } else {
-            // Config for the network session
-            let urlconfig = URLSessionConfiguration.af.default
-            urlconfig.timeoutIntervalForRequest = TimeInterval(AppConsts.customTimeoutIntervalForRequest)
-            urlconfig.timeoutIntervalForResource = TimeInterval(AppConsts.customTimeoutIntervalForResource)
-
-            // Logger for debugging
-            let myNetworkLogger = CustomNetworkLogger()
-            // Request interceptor to add parameters and retry
-            let myInterceptor = CustomRequestInterceptor()
-
-            // Shared session with all requests
-            let session = Session(configuration: urlconfig, interceptor: myInterceptor, eventMonitors: [myNetworkLogger])
-            self.session = session
-        }
-    }
-
-    /// perform a network request to the API with a given url and executes a completion with the data
-    /// - Parameters:
-    ///   - url: the url of the request
-    ///   - completion: the completion to execute once the data is retrieved
     func performApi<T: Decodable>(
         URL: URL?,
         method: HTTPMethod = .get,
@@ -64,15 +34,8 @@ class NetworkManagerImpl: NetworkManager {
             completion(.failure(.invalidURL(url: "")))
             return
         }
-
-        // Create a default header
-        var headers: HTTPHeaders = [:]
-
-
-        // Perfom request
-        // Check status code
-        // Decode reponse to a specific object
-        session.request(URL, method: method, parameters: parameters, encoding: encoding, headers: headers)
+        let headers: HTTPHeaders = [:]
+        AF.request(URL, method: method, parameters: parameters, encoding: encoding, headers: headers)
             .validate()
             .responseDecodable(of: T.self) { response in
                 switch response.result {

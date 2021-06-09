@@ -8,11 +8,10 @@
 import Foundation
 import UIKit
 import Alamofire
-
+/*
 extension UIViewController {
     func handleError(error: ErrorEnum, callback: (() -> Void)? = nil) {
         switch error {
-        
         case .requestError(let error, _):
             if let responseCode = error.responseCode {
                 var title, body: String?
@@ -24,21 +23,20 @@ extension UIViewController {
                 case 403:
                     print("403 error")
                 default:
-                    title = "R.string.localizable.errorUnknownRequestTitle()"
-                    body = "R.string.localizable.errorUnknownRequestBody(errorCode, errorMessage)"
+                    title = "request error"
+                    body = "error in your request"
                 }
-
                 showAlertError(title: title!, body: body!, callback: callback)
             } else if (error.isSessionTaskError) {
                 showAlertError(
-                    title: "R.string.localizable.errorNetworkTitle()",
-                    body: "R.string.localizable.errorNetworkBody()",
+                    title: "probleme de connexion",
+                    body: "verifiez que vous êtes bien connectés à internet",
                     callback: callback
                 )
             } else {
                 showAlertError(
-                    title: "R.string.localizable.unknownErrorTitle()",
-                    body: "R.string.localizable.unknownErrorBody()",
+                    title: "unknown Error Title",
+                    body: "inknown Error",
                     callback: callback
                 )
             }
@@ -50,9 +48,10 @@ extension UIViewController {
             )
         default:
             showAlertError(
-                title: "R.string.localizable.unknownErrorTitle()",
-                body: "R.string.localizable.unknownErrorBody()"
+                title: "erreur",
+                body: "erreur"
             )
         }
     }
 }
+*/

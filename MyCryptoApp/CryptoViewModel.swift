@@ -11,7 +11,5 @@ class CryptoViewModel {
     
     func conversionEuroToCrypto(euro: Double, cryptoValue: Double) -> Double {
         return euro/cryptoValue
-        
-    }
-    
+    }    
 }

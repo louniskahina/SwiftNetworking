@@ -7,44 +7,32 @@
 
 import Foundation
 import Alamofire
-import Combine
 import UIKit
 
 class CryptoListTableViewModel {
     
     // Values observed
-    @Published var requestError: (Error, Any?)?
-    @Published var dataSource: [crypto]?
-    @Published var hasFetched = false
-    @Published var hasNoCryptos = false
+     var requestError: (Error, Any?)?
+     var dataSource: [crypto]?
     
-    // List of subscriptions
-    private var subscriptions: Set<AnyCancellable> = []
-    //Contains api requests
     private var networkService: NetworkService = NetworkService()
     
     init () {
-        
     }
-    // Data source of the table
+ 
     init(dataSource: [crypto]?) {
         self.dataSource = dataSource
     }
     
     func fetchCrypto(completion: @escaping (Result<[crypto], Error>) -> Void) {
-        hasFetched = false
         self.networkService.fetchCrypto { [weak self] (result: Result<[crypto], AFError>) in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let cryptoList):
                     if cryptoList.isEmpty {
-            
-                        self?.hasNoCryptos = true
-                        self?.hasFetched = true
+                        // TODO
                     } else {
-                    
                         self?.dataSource = cryptoList //the datasource of tableview will get the fetchCrypto result
-                        self?.hasFetched = true
                     }
                     completion(.success(cryptoList))
                 case .failure(let error):

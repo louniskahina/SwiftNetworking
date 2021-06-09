@@ -23,22 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6E071F6A-944B-4B16-9184-FAC02327CFCB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyCryptoApp/CryptoItemTableViewCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "CryptoItemTableViewCell"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "F0F49722-4018-4017-93D1-C3D7AC45F557"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -46,10 +30,10 @@
             filePath = "MyCryptoApp/CryptoItemTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "CryptoItemTableViewCell"
-            landmarkType = "3">
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "cryptoValueLabel"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -62,10 +46,10 @@
             filePath = "MyCryptoApp/CryptoItemTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "CryptoItemTableViewCell"
-            landmarkType = "3">
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "cryptoSymbolLabel"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -94,74 +78,10 @@
             filePath = "MyCryptoApp/CryptoTableDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "12A27009-D16A-459D-B413-3467A91DA73F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyCryptoApp/CryptoListTableViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "CryptoListTableViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "12A27009-D16A-459D-B413-3467A91DA73F - 3371724d1d0d348b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyCryptoApp.CryptoListTableViewController.(setListeners in _0DF78F15D0402401E33C2752BF4F7755)() -&gt; ()"
-                  moduleName = "MyCryptoApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Kahina.Lounis/Desktop/MyCryptoApp/MyCryptoApp/CryptoListTableViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "215">
-               </Location>
-               <Location
-                  uuid = "12A27009-D16A-459D-B413-3467A91DA73F - f2b53383c4386ffb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;(Swift.Error, Swift.Optional&lt;Any&gt;)&gt;) -&gt; () in MyCryptoApp.CryptoListTableViewController.(setListeners in _0DF78F15D0402401E33C2752BF4F7755)() -&gt; ()"
-                  moduleName = "MyCryptoApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Kahina.Lounis/Desktop/MyCryptoApp/MyCryptoApp/CryptoListTableViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "94">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "00FC4111-1643-4821-8CB0-6492A0390D2F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyCryptoApp/CryptoListTableViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "CryptoListTableViewController"
-            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -174,8 +94,8 @@
             filePath = "MyCryptoApp/CryptoListTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "CryptoListTableViewController"
             landmarkType = "3">
             <Locations>
@@ -282,24 +202,8 @@
             filePath = "MyCryptoApp/CryptoListTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BD5DD734-A79E-4734-A7F1-DFB68C099745"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyCryptoApp/CryptoListTableViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -308,22 +212,6 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "18BE12F1-4589-4437-8947-8DE7969F5408"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyCryptoApp/Networking/NetworkService .swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "fetchCrypto(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1EFB37C1-CA32-4282-A003-DF7350777968"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -339,7 +227,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D1861A70-39DD-4EF2-8C78-725835FD5B6B"
+            uuid = "1EFB37C1-CA32-4282-A003-DF7350777968"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -355,6 +243,22 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "D1861A70-39DD-4EF2-8C78-725835FD5B6B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyCryptoApp/Networking/NetworkService .swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "fetchCrypto(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             uuid = "8EC21BCA-EB60-4BE5-8764-BBA3F033F853"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -362,8 +266,8 @@
             filePath = "MyCryptoApp/CryptoListTableViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "fetchCrypto(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -378,41 +282,9 @@
             filePath = "MyCryptoApp/CryptoListTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "onFetchingCryptoAction(result:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E0ECF01A-4A27-4397-A72C-CF3441B6B7BC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyCryptoApp/CryptoListTableViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "onFetchingCryptoAction(result:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E6CB3586-2E9D-42A6-96A2-543B2D90B47A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyCryptoApp/CryptoTableDataSource.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkName = "onFetchingCryptoAction()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -478,6 +350,197 @@
             endingLineNumber = "14"
             landmarkName = "testGetCorpusList()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "951F178F-FA7D-42F0-87C5-FE83A61B93C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyCryptoAppTests/CryptosListTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "CryptosListTests"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8E547CFE-BD4A-4218-9310-FC5C24A988D3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyCryptoApp/UnitTests/CryptoTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "CryptosListTests"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72B3F7A8-21DD-4A38-9A4B-2AD2D89E58D6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyCryptoAppTests/MyCryptoAppTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "MyCryptoAppTests"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1310FA96-02C8-459F-BE91-5A13B5763188"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyCryptoApp/Utils/ErrorExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "494AD80E-7402-4F06-88FA-DCB95105A5BE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyCryptoApp/CryptoListTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8FB9CF6E-BBE4-4840-8D17-9D1022A18AA1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyCryptoApp/CryptoListTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8FB9CF6E-BBE4-4840-8D17-9D1022A18AA1 - 3c01e47abe77b3f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyCryptoApp.CryptoListTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MyCryptoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Kahina.Lounis/Desktop/MyCryptoApp/MyCryptoApp/CryptoListTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "195">
+               </Location>
+               <Location
+                  uuid = "8FB9CF6E-BBE4-4840-8D17-9D1022A18AA1 - 67ef21db30ea9984"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;MyCryptoApp.crypto&gt;, Swift.Error&gt;) -&gt; () in MyCryptoApp.CryptoListTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MyCryptoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Kahina.Lounis/Desktop/MyCryptoApp/MyCryptoApp/CryptoListTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "166">
+               </Location>
+               <Location
+                  uuid = "8FB9CF6E-BBE4-4840-8D17-9D1022A18AA1 - 7cf622c6d6807b5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;MyCryptoApp.crypto&gt;, Swift.Error&gt;) -&gt; () in MyCryptoApp.CryptoListTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MyCryptoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Kahina.Lounis/Desktop/MyCryptoApp/MyCryptoApp/CryptoListTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07F3C883-CCA3-4BB8-AF70-BC6CFD8D6AA5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyCryptoApp/CryptoListTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "07F3C883-CCA3-4BB8-AF70-BC6CFD8D6AA5 - 3c01e47abe77b3f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyCryptoApp.CryptoListTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MyCryptoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Kahina.Lounis/Desktop/MyCryptoApp/MyCryptoApp/CryptoListTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "195">
+               </Location>
+               <Location
+                  uuid = "07F3C883-CCA3-4BB8-AF70-BC6CFD8D6AA5 - 67ef21db30ea9984"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;MyCryptoApp.crypto&gt;, Swift.Error&gt;) -&gt; () in MyCryptoApp.CryptoListTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MyCryptoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Kahina.Lounis/Desktop/MyCryptoApp/MyCryptoApp/CryptoListTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "166">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

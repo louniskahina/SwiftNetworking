@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_MyCryptoAppTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_MyCryptoAppTestsVersionString[];
+FOUNDATION_EXPORT double Pods_MyCryptoApp_MyCryptoAppTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_MyCryptoApp_MyCryptoAppTestsVersionString[];
 

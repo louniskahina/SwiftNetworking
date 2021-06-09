@@ -7,11 +7,8 @@ target 'MyCryptoApp' do
 
   # Pods for MyCryptoApp
   pod 'Alamofire', '~> 5.2'
-
-  target 'MyCryptoAppTests' do
-    inherit! :search_paths
-    # Pods for testing
+  # Unit Tests
+  target :MyCryptoAppTests
+    
   end
 
-
-end
